@@ -17,4 +17,3 @@ ggsave("Liverpooltransfers.png")
 Liverpooltransfersoverall <- read.csv("Liverpooltransfers.csv") 
 ggplot(as.data.frame(Liverpooltransfersoverall)) + theme_classic()+
 geom_label(aes(x = Season, y = Amount, label = Amount, colour = Type)) + scale_colour_manual(values=c("White", "Blue", "White"))
-
